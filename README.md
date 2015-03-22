@@ -17,3 +17,13 @@ The goal of the *run_analysis.R* script is to accomplish the following.
 * Uses descriptive activity names to name the activities in the data set
 * Appropriately labels the data set with descriptive variable names. 
 * From the data set in step 4, creates a second, independent tidy data set with the average of each variable for each activity and each subject.
+
+#### Procedure
+1. Read data from text files into data frames ([download](https://d396qusza40orc.cloudfront.net/getdata%2Fprojectfiles%2FUCI%20HAR%20Dataset.zip)
+2. Merge test and train subject data.
+3. Merge test and train y data.
+4. Merge test and train x data.
+5. Merge datasets of subject, x and y data (results from 2,3,4).
+6. Subset to only mean & stdv features.
+7. Calculate mean of group by subject and activity.
+8. Write results to the ExportData.txt file.
