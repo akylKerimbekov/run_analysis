@@ -37,7 +37,7 @@
     means = dcast(melted , subject + label ~ variable, mean)
     
     # export final data
-    write.table(means, file="./ExportData.txt")
+    write.table(means, file="./ExportData.txt", row.names = FALSE)
     
     # output
     means
